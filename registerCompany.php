@@ -17,11 +17,12 @@
           <li><a href="registerCompany.php">Register for Companies</a></li>
           <li><a href="register.php">Register for Freelancers</a></li>
           <li><a href="job.php">Jobs</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
           <li><a href="account.php" class="button special">Accounts</a></li>
         </ul>
       </nav>
     </header>
-    <section id="main" class="wrapper">
+    <section id="main" class="wrapper2">
       <div class="container">
         <header class="major">
           <h2>Register for Companies</h2>

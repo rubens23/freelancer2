@@ -18,11 +18,12 @@
           <li><a href="registerCompany.php">Register for Companies</a></li>
           <li><a href="register.php">Register for Freelancers</a></li>
           <li><a href="job.php">Jobs</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
           <li><a href="account.php" class="button special">Accounts</a></li>
         </ul>
       </nav>
   </header>
-  <section class="wrapper">
+  <section class="wrapper2">
   <div class="container">
     <header class="major">
       <h2>Login</h2>
@@ -67,6 +68,6 @@
       </ul>
       <p align="middle">Spinit Connect | Copyright 2015</p>
   </footer>
-  
+
 </body>
 </html>
