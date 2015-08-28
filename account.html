@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/skel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-xlarge.css" />
+   <meta charset="UTF-8">
+   <title>Accounts</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	 <header id="header">
+      <h1><a href="home.html">Spinit</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="registerCompany.php">Register for Companies</a></li>
+          <li><a href="register.php">Register for Freelancers</a></li>
+          <li><a href="job.php">Jobs</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="account.html" class="button special">Accounts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main" class="wrapper2">
+    	<div style="font-size: 20px","text-align: center"; class="container2">
+<script>
+$.get('account.php', function(data) {
+    $('#info').html("Hello you are logged in as " + data)
+});
+
+// $(document).ready(function(){
+// // $('#info').onload = function() {
+// //   answer
+// // };
+// });
+</script>
+
+  <form id="info">
+  </form>
+</div>
+</section>
+ <footer id="footer" >
+             <ul class="icons">
+               <li>
+                 <a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+               </li>
+               <li>
+                 <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+               </li>
+               <li>
+                 <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+               </li>
+               <li>
+                 <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+               </li>
+             </ul>
+           </div>
+         </div>
+     </footer>
+</body>
+</html>
