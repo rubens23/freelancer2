@@ -17,10 +17,13 @@
           <li><a href="registerCompany.php">Register for Companies</a></li>
           <li><a href="register.php">Register for Freelancers</a></li>
           <li><a href="job.php">Jobs</a></li>
-          <li><a href="account.php" class="button special">Accounts</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="account.html" class="button special">Accounts</a></li>
         </ul>
         </nav>
     </header>
+    <section id="main" class="wrapper2">
+      <div class="container">
     <?php 
     $host ="localhost";
 for ($i=0; $i < 70; $i++) { 
@@ -31,10 +34,6 @@ for ($i=0; $i < 70; $i++) {
     $name = mysql_query("SELECT * FROM company WHERE id = '3'");
     $query = mysql_query("SELECT * FROM jobpost WHERE id = '$i'");
     $numrows = mysql_num_rows($query);
-    while ($row = mysql_fetch_assoc($name) ) {
-                $dbname = $row['companyName'];
-                echo "$dbname";
-            }
     if($numrows!==0){
         while($row = mysql_fetch_assoc($query)){
             $dbid = $row['id'];
@@ -79,6 +78,8 @@ echo "<form action='post.php' method='post'>
 // mysqli_close($connect);
 
 ?>
+</div>
+</section>
 
 <footer id="footer" class="footer3">
     <ul class="icons">

@@ -21,7 +21,7 @@ if($email&&$password)
 			$_SESSION['uid'] = $row['id'];
 			$_SESSION['email'] = $row['email'];
 			$_SESSION['type'] = $row['type'];
-			header( 'Location: home.php' );
+			header( 'Location: account.html' );
 		}
 		else
 			echo "Your password is incorrect!";
@@ -48,7 +48,7 @@ if($email&&$password)
 			$_SESSION['uid'] = $row['id'];
 			$_SESSION['email'] = $row['email'];
 			$_SESSION['type'] = $row['type'];
-			header( 'Location: home.php' );
+			header( 'Location: account.html' );
 		}
 		else
 			echo "Your password is incorrect!";
